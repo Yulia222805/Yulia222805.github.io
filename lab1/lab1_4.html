@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Изображения</title>
@@ -47,16 +47,18 @@
 		которые отображаются хорошо на устройствах с сильно отличающимися размерами экрана, разрешением, и другими характеристиками)
 		используют атрибуты <code>sizes</code> и  <code>srcset</code>.
 		Атрибут <code>sizes</code> задаёт размеры изображения для разных макетов страницы. 
-		<figure>
-		<img src="images/aquaria.jpg" alt="aquaria"
-     		sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw">
+		<!-- <figure>
+		<img src="image.jpg" srcset="image-480.jpg 480w, image-800.jpg 800w, image-1200.jpg 1200w" sizes="(max-width: 600px) 480px, (max-width: 900px) 800px, 1200px" alt="Пример адаптивного изображения">
+		<img src="images/aquaria.jpg" alt="aquaria" sizes="(max-width: 600px) 100px, (max-width: 1200px) 50px, 33px">
 			<figcaption>aquaria(с пороговыми значенями размера экрана)</figcaption>
-		</figure>
+		</figure> -->
 
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
-
+<!-- dfsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff -->
+<!-- dfsssssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
 		<figure>
-		<img srcset="images/mushroom_portrait.jpg 600w,
+		<img src="images/mushroom.jpg" 
+			srcset="images/mushroom_portrait.jpg 600w,
              	images/mushroom.jpg 900w,
              	images/mushroom_landscape.jpg 1200w"
      		sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
