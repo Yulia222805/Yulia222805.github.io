@@ -57,12 +57,16 @@
 <!-- dfsfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff -->
 <!-- dfsssssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
 		<figure>
-		<img src="images/mushroom.jpg" 
-			srcset="images/mushroom_portrait.jpg 600w,
-             	images/mushroom.jpg 900w,
-             	images/mushroom_landscape.jpg 1200w"
-     		sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-     		alt="mushroom">
+			<img
+    			srcset="
+        			images/mushroom_portrait.jpg 300w,
+        			images/mushroom.jpg 600w,
+        			images/mushroom_retina.jpg 900w
+    				"
+    			sizes="(max-width: 600px) 50vw, 33vw"
+    			src="images/mushroom_retina.jpg"
+    			alt="mushroom">
+
 			<figcaption>mushroom(разные изображения для разных размеров)</figcaption>
 		</figure>
 
@@ -87,7 +91,7 @@
 				<source srcset="images/html5-logo.png" type="image/png">
 				<img src="images/html5-logo.png" alt="HTML5 Logo">
 		    </picture>
-			<figcaption>HTML5 Logo(использованы изображения разных форматов)</figcaption>
+			<figcaption>HTML5 Logo</figcaption>
 		</figure>
 	</section>
 </body>
