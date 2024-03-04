@@ -1,0 +1,25 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+p{
+    text-align: right;
+}
+
+h1,h2{
+    color: red;
+    font-family: Arial sans-serif;
+    text-align: right;
+}
+
+em{
+    color: green;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto; /*для верх-низ = 0, для право-лево=auto*/
+    padding-left: 10px;
+    padding-right: 10px;
+}

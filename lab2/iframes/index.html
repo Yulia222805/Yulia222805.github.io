@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="utf-8">
-<title>Организация фреймовой структуры</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
+    <title>Организация фреймовой структуры</title>
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .menu-i{
+            width:200px;
+            height:100%
+        }
+        .content-i{
+            width:800px;
+            height:100%
+        }
+    </style>
 </head>
-<frameset cols="200, 800">
+<!-- <frameset cols="200, 800">
     <frame src="menu.html" name="menu">
-    <frame name="content">
-    <noframes>Вы просматриваете эту страницу с помощью браузера, не поддерживающего фреймы</noframes>
-</frameset>
+        <frame name="content">
+            <noframes>Вы просматриваете эту страницу с помощью браузера, не поддерживающего фреймы</noframes>
+</frameset> -->
+
+<body>
+    <iframe src="menu.html" name="menu" class="menu-i"></iframe>
+    <iframe name="content" class="content-i"></iframe>
+</body>
+
 </html>
+
+
