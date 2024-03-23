@@ -1,0 +1,21 @@
+body {
+    background-image: url(../background.jpg);
+    background-repeat: repeat;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #114858;
+}
+
+a {
+    color: #0029a3f8;
+    font-size: 25px;
+    font-weight:700;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(3, 147, 243, 0.459);
+    transition: color 0.7s ease;
+    line-height: 40px;
+}
+
+a:hover{
+    color:#03297c;
+    text-decoration: underline;
+}

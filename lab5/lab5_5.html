@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Использование grid при построении колонок</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: [first] 200px [second] 600px [thrird] 200px; */
+            /* grid-template-columns: 200px 600px 200px; */
+            grid-template-columns: 200px 1fr 200px;
+            gap: 10px;
+        }
+
+        #left {
+            background: #ccf;
+            grid-column-start: 1;
+        }
+
+        #right {
+            background: #fcc;
+            grid-column-start: 3;
+        }
+
+        #center {
+            background: #cfc;
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">left<br>left<br>left<br>left<br>left</div>
+        <div id="right">right<br>right<br>right<br>right</div>
+        <div id="center">center text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text</div>
+    </div>
+</body>
+
+</html>

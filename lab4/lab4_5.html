@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Оформление вертикального меню</title>
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
     <style>
         html {
             background: #f0f0f0;
@@ -16,15 +17,26 @@
             padding-bottom: 1px;
             padding-left: 0px;
             padding-right: 10px;
+            /* background: url("css_sprites.png") -10px -10px no-repeat; */
+
         }
 
         .menu ul {
-            list-style-image: url('pic/minus.gif');
             margin-bottom: 10px;
-            /* margin-left: 0; */
+            list-style-type: none;
+            position: relative;
         }
 
-        
+        .menu li::before {
+            /*plus*/
+            position: absolute;
+            left: 20px;
+            content: '\f196';
+            font-family: FontAwesome;
+            height: 16px;
+            width: 16px;
+        }
+
         .menu li {
             color: black;
 
@@ -32,22 +44,55 @@
 
         .menu li a {
             color: #46709b;
-            /*   */
-            
 
         }
 
         .menu li a:hover {
-            color: #003a70;
+            color: #020936;
             transition: color 0.3s ease;
         }
 
         .menu li ul {
-            list-style-image: url('pic/point.gif');
-            
+            display: none;
         }
 
-        /* .menu li li {}  */
+        .menu li:hover ul {
+            display: block;
+        }
+
+        .menu li:hover::before {
+            /*minus*/
+            content: '\f147';
+            font-family: FontAwesome;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 20px;
+        }
+
+        .menu li li::before {
+            /*circle*/
+            content: '\f192';
+            font-family: FontAwesome;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0px;
+        }
+
+        .menu li li:hover::before {
+            /*circle*/
+            content: '\f192';
+            font-family: FontAwesome;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0px;
+        }
+
+        .menu li li {
+            margin-left: -20px;
+        }
     </style>
 </head>
 

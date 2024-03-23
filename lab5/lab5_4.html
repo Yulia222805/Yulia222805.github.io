@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Использование flex при построении колонок</title>
+    <style>
+        .container {
+            display: flex;
+            /* по умолчанию */
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: auto;
+            gap: 10px;
+        }
+
+        div {
+            flex: 1;
+            padding-top: 10px;
+            /* margin: 0 7px; */
+            box-sizing: border-box;
+        }
+
+        #left {
+            background: #ccf;
+            flex-basis: 200px;
+            order: -1;
+        }
+
+        #right {
+            background: #fcc;
+            flex-basis: 200px;
+            order: 1;
+        }
+
+        #center {
+            background: #cfc;
+            flex-basis: 600px;
+            order: 0;
+            flex-grow: 4; /*звймет в 4 раза больше места*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="left">left<br>left<br>left<br>left<br>left</div>
+        <div id="right">right<br>right<br>right<br>right</div>
+        <div id="center">center text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text text text text text text text
+            text
+            text text text text text text text text text text text text text text text</div>    
+        </div>
+</body>
+
+</html>
