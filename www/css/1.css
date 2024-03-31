@@ -1,201 +1,312 @@
 body {
-    font-family: 'Ubuntu', sans-serif;
-}
-.header {
-    width: 100%;
-    max-width: 1212px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 56px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    box-sizing: border-box;
-    font-weight: 700;
-}
-.footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #F7F7F7;
-}
-.wrap {
-    width: 100%;
-    max-width: 1212px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
-}
-.nav {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items:center;
-    font-size: 14px;
-}
-.nav>li {
-    margin-left: 37px;
-}
-.nav>li>a {
-    text-decoration: none;
-    color: #202020;
-}
-.nav_btn {
-    background-color: #5528FF;
-    border-radius: 5px;
-    padding: 6px 14px;
-    color: #fff;
-    border: none;
-    font-weight: 700;
-}
-.logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.logo_img {
-    display: block;
-    width: 58px;
-    height: 58px;
-    background-image: url(../img/logo.svg);
-    margin-right: 25px;
-}
-.logo_text {
-    font-size: 24px;
-    color: #202020;
-}
-.title-main {
-    font-size: 55px;
-    color: #202020;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    margin-bottom: 0.4em;
-}
-.text-main {
-    font-size: 32px;
-    line-height: 1.6;
-    color: #4F4F4F;
-    max-width: 746px;
-    margin-bottom: 2em;
-}
-.button {
-    background-color: #5528FF;
-    border-radius: 10px;
-    padding: 16px 59px;
-    color: #fff;
-    border: none;
-    font-size: 24px;
-}
-.page {
-    padding-top: 85px;
-    padding-bottom: 109px;
-    position: relative;
-}
-.page-top {
-    border-top: 1px solid #C2C2C2;
-}
-.page h2 {
-    position: absolute;
-    top: -24px;
-    font-size: 14px;
-    font-weight: 300;
-    background-color: #fff;
-    padding: 5px 15px;
-    color: #C2C2C2;
-}
-.services {
+    /*     font-family: "Ubuntu", sans-serif; */
+        
+        font-family: "Hellix", sans-serif;
+    }
+    
+    .header {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 30px;
+        box-sizing: border-box;
+        font-weight: 700;
+    }
+    
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #f7f7f7;
+    }
+    
+    .wrap {
+        width: 100%;
+        max-width: 1180px;
+        margin: 82px 362px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    
+    .nav {
+        list-style-type: none;
+        display: flex;
+        /* чтобы элементы встали в ряд */
+        justify-content: flex-start;
+        font-size: 14px;
+        align-items: center;
+    }
+    
+    /* надо стилизовать список, чтобы между ними было какое-то расстояние */
+    .nav>li {
+        margin-left: 40px;
+        padding-top: 9px;
+    }
+    
+    .nav>li>a {
+        text-decoration: none;
+        color: #202020;
+        align-items: center;
+    
+        font-weight: 600;
+    }
+    
+    /* стилизуем кнопку */
+    .nav_btn {
+        background-color: #5528FF;
+        border-radius: 5px;
+        padding: 3px 10px;
+        color: #ffffff;
+        border: none;
+        margin-top: 3px;
+        margin-right: -31px;
+        font-weight: 600;
+        width: 100px;
+        height: 24px;
+        /* Rectangle */
+    
+        /* position: absolute;
+        width: 100px;
+        height: 24px;
+        left: 1451px;
+        top: 76.5px; */
+    
+    /*     height: 24px; */
+    
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .logo_img {
+        display: block;
+        width: 58px;
+        height: 58px;
+        background-image: url(../img/logo.svg);
+        margin-right: 26px;
+    }
+    
+    /* стилизуем текст */
+    .logo_text {
+        /* font-family: Hellix; */
+        font-size: 24px;
+        text-align: center;
+        color: #202020;
+        margin-top: -1px;
+    }
+    
+    /* We're an independent development agency. */
+    .title-main {
+        /* font-family: 'Hellix'; */
+        font-size: 58px;
+        color: #202020;
+        font-weight: 700;
+        margin-bottom: -13.5px;
+        margin-left: -2px;
+    }
+    
+    /* We understand */
+    .text-main {
+        /* font-family: 'Hellix'; */
+        font-size: 32px;
+    /*     line-height: 52.5px; */
+        text-align: left;
+        color: #4F4F4F;
+        font-weight: 400;
+        margin-left: -2px;
+        max-width: 750px;
+        line-height: 53.8px;
+
+        margin-bottom: 55px;
+        /* We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences. */
+    }
+    
+    /* вторая кнопка для связи */
+    .button {
+        background-color: #5528FF;
+        border-radius: 10px;
+        /* padding: 16px 59px; */
+        text-align: left;
+        text-align: justify;
+        padding-left: 52px;
+        color: #ffffff;
+        border: none;
+    
+        font-size: 24px;
+        font-weight: 400;
+    
+        width: 235px;
+        height: 60px;
+        margin-top: 1px;
+        margin-left: -3px;
+
+        margin-bottom: 31px;
+    }
+
+    .button-text{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .page {
+        padding-top: 40px;
+        padding-bottom: 0px;
+        position: relative;
+    }
+    
+    .page-top {
+        border-top: 1px solid #C2C2C2;
+    
+        /* OUR SERVICES */
+    
+        /* position: absolute;
+        left: 19.22%;
+        right: 77.14%;
+        top: 0%;
+        bottom: 5.56%;
+    
+        font-family: 'Hellix';
+        
+         */
+        /* identical to box height */
+    
+    }
+    
+    .page h2 {
+        position: absolute;
+        top: -28px;
+        letter-spacing: 1.4px;
+        margin-left: -18px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 300;
+        background-color: #ffffff;
+        padding: 5px 15px;
+        color: #C2C2C2;
+    }
+    
+    .services {
+        display: grid;
+        grid-template: repeat(2, 1fr) / 50% 50%;
+        grid-row-gap: 25px;
+        /* а можно было через fraction */
+        /* grid-template: 1fr 1fr / 1fr 1fr; */
+    
+    }
+    
+    .services-item{
+        display: flex;
+        justify-content: flex-start;
+        /* чтобы картинки стали по центру */
+        align-items: center;
+    }
+    
+    .services_img{
+        flex-basis: 95px;
+        /* margin-top: 15px; */
+        text-align: center;
+        margin-top: -33px;
+    }
+    
+    .services_text{
+        flex-basis: calc(80% - 95px);
+    }
+    
+    .services h3 {
+        font-size: 28px;
+        font-weight: 400;
+        margin-left: 37px;
+        margin-top: -33px;
+        /* margin-bottom: 0px; */
+    }
+    
+    .services p {
+        /* font-family: var(--font-family); */
+        font-weight: 400;
+        font-size: 14px;
+        color: #b2b2b2;
+        line-height: 28px;
+        margin-top: -10px;
+        margin-left: 37px;
+        max-width: 288px;
+        margin-top: -13px;
+        margin-bottom: 20px
+    }
+    
+   .clients {
     display: grid;
-    grid-template: repeat(2, 1fr) / 50% 50%;
-    grid-row-gap: 38px;
-}
-.services-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.services_img {
-    flex-basis: 165px;
-    text-align: center;
-}
-.services_text {
-    flex-basis: calc(80% - 165px);
-}
-.services h3 {
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 17px;
-    margin-top: 0;
-}
-.services p {
-    font-size: 14px;
-    color: #B2B2B2;
-    line-height: 1.5;
-}
-.clients {
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 25%);
+    grid-template: repeat(2, 1fr) / repeat(4, 25.4%);
     text-align: center;
     grid-row-gap: 44px;
-    padding-top: 0;
+    margin-top: -52px;
+    margin-left: -13px;
 }
-.team {
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    grid-row-gap: 51px;
-    padding-top: 20px;
-}
-.team-item {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.team-item img{
-    margin-right: 35px;
-}
-.team-item>div {
-    flex-basis: calc(100% - 100px);
-}
-.team-item h3 {
-    font-size: 28px;
-    color: #202020;
-    margin-bottom: 0;
-    margin-top: 7px;
-}
-.team-item p {
-    font-size: 14px;
-    color: #B2B2B2;
-}
-.box-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.social {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-}
-.social>li {
-    margin-left: 40px;
-}
-.social>li>a {
-    text-decoration: none;
-    color: #B2B2B2;
-    font-size: 24px;
-}
+    
+    .team{
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 34.6%);
+        /* чтобы сделать отступы между ячейками */
+        grid-row-gap: 52px;
+        /* grid-column-gap: 40px; */
+    }
+    
+    .team-item{
+        display: flex;
+        justify-content: flex-start;
+        /* чтобы картинки стали по центру */
+        align-items: center;
+        margin-left: -2px;
+    }
+    .team-item img{
+        margin-right: 33px;
+    }
+    .team-item>div{
+        flex-basis: calc(100% - 100px);
+    }
+    
+    .team-item h3 {
+        font-size: 28px;
+        color: #202020;
+        margin-bottom: 0;
+        margin-top: 15px;
+        margin-bottom: 11px;
+    }
+    .team-item p {
+        font-size: 14px;
+        color: #B2B2B2;
+    }
 
-/* We understand the intricacies of web development inside-out. That's why we build rock-solid Mobile and Web applications enriched with user-centered visual experiences. */
-
-position: absolute;
-width: 741px;
-height: 196px;
-left: calc(50% - 741px/2 - 219.5px);
-top: 329px;
-
-font-family: 'Hellix';
-font-size: 32px;
-line-height: 52px;
-
-color: #4F4F4F;
-
+    .box-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15.6px;
+        margin-left: 376.5px
+    }
+    
+    .social{
+        list-style-type: none;
+        padding-left: 0;
+        display: flex;
+    }
+    
+    /* для отступов между */
+    .social>li{
+        margin-left: 27px;
+        margin-top: -5px;
+        padding-left: 17px;
+    }
+    
+    .social>li>a{
+        text-decoration: none;
+        color: #b2b2b2;
+        font-size: 24px;
+    }
