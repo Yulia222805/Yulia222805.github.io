@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+
+        let n = +prompt("Введите число строк:");
+        let cat = 2, dog = 3, flag;
+
+        for (let i = 0; i < n; i++) {
+            if (dog > 0 && cat == 2) {
+                flag = 6 - dog - cat;
+                console.log("dog\t".repeat(dog) + "cat\t".repeat(cat) + "dog\t".repeat(flag));
+                dog--;
+            }
+            else {
+                dog = 3;
+                flag = 6 - dog - cat;
+                console.log("cat\t".repeat(cat) + "dog\t".repeat(dog) + "cat\t".repeat(flag));
+                cat--;
+                if (cat == 0) { cat = 2; }
+            }
+            console.log();
+        }
+    </script>
+
+</body>
+
+</html>

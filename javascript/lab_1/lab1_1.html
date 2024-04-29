@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        "use strict";
+        let age, gender;
+        age = +prompt("Введите возраст: ", "");
+        gender = prompt("Введите пол (м/ж): ");
+
+        if (age >= 0 && age <= 17) {
+            alert("Вам работать ещё рано — учитесь");
+        }
+        else if (age > 17 && age < 60 && (gender == "м" || gender == "m") ||
+            age > 17 && age < 55 && (gender == "ж" || gender == "w")) {
+            alert("Вам ещё работать и работать");
+        }
+        else if (age >= 60 && age <= 64 && (gender == "м" || gender == "m") ||
+            age >= 55 && age <= 59 && (gender == "ж" || gender == "w")) {
+            alert("Скоро пенсия!")
+        }
+        else if (age >= 65 && (gender == "м" || gender == "m") ||
+            age >= 60  && (gender == "ж" || gender == "w")) {
+            alert("Вам пора на пенсию");
+        }
+        else {
+            alert("Да кто ты такой?");
+        }
+    </script>
+
+
+</body>
+
+</html>
