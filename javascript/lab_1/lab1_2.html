@@ -13,7 +13,7 @@
         "use strict";
         let num = +prompt("Введите целое число:");
         let flag;
-
+        if(num > 0 && Number.isInteger(num)){
         if (num % 10 == 1 && num % 100 != 11) {
             flag = 'а';
             // alert(`На ветке сидит ${num} ворона`);
@@ -42,6 +42,9 @@
                 alert("Введите целое число");
                 break;
         }
+        
+    }
+    else alert("Введите целое число");
     </script>
 
 </body>
