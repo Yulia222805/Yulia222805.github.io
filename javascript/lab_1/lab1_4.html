@@ -19,7 +19,7 @@
         function primeNum(n) {
             if (n <= 1) return false;
             for (let i = 2; i <= Math.sqrt(n); i++) {
-                if (n % i === 0) return false;
+                if (n % i === 0) return false;  
             }
             return true;
         }
@@ -28,7 +28,8 @@
                 primeNumbers.push(i);
             }  
         }
-        alert(primeNumbers.join(" "));
+        if(primeNumbers.length == 0) alert(0);
+        else alert(primeNumbers.join(" "));
 
         // function printAndAdd(t, x2, x3, x5, print) {
         //     x2.push(t * 2);
