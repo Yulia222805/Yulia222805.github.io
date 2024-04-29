@@ -14,7 +14,7 @@
         let num;
         do {
             num = prompt("Введите целое число, большее 100:\nИли нажмите кнопку отмены(ESC)");
-        } while (+num <= 100 && num !== null);
+        } while ((+num <= 100 || isNaN(num)) && num !== null);
     </script>
 
 </body>
