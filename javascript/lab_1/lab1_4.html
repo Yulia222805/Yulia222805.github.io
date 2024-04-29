@@ -12,35 +12,53 @@
     <script>
         "use strict";
 
-        function printAndAdd(t, x2, x3, x5, print) {
-            x2.push(t * 2);
-            x3.push(t * 3);
-            x5.push(t * 5);
-            print.push(t);
+
+        let n = +prompt("Введите количество чисел:");
+        const primeNumbers = [];
+
+        function primeNum(n) {
+            if (n <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i === 0) return false;
+            }
+            return true;
         }
-
-        const x2 = [];
-        const x3 = [];
-        const x5 = [];
-        const print = [];
-
-        const n = +prompt("Введите количество чисел:");
-
-        printAndAdd(1, x2, x3, x5, print);
-        let k = 1;
-
-        while (k <= n) {
-            const x = Math.min(x2[0], x3[0], x5[0]);
-            printAndAdd(x, x2, x3, x5, print);
-            k++;
-
-            if (x === x2[0]) x2.shift();
-            if (x === x3[0]) x3.shift();
-            if (x === x5[0]) x5.shift();
+        for (let i = 2; i <= n; i++) {
+            if (primeNum(i)) {
+                primeNumbers.push(i);
+            }  
         }
+        alert(primeNumbers.join(" "));
 
-        print.shift();
-        alert(print.join(" "));
+        // function printAndAdd(t, x2, x3, x5, print) {
+        //     x2.push(t * 2);
+        //     x3.push(t * 3);
+        //     x5.push(t * 5);
+        //     print.push(t);
+        // }
+
+        // const x2 = [];
+        // const x3 = [];
+        // const x5 = [];
+        // const print = [];
+
+        // const n = +prompt("Введите количество чисел:");
+
+        // printAndAdd(1, x2, x3, x5, print);
+        // let k = 1;
+
+        // while (k <= n) {
+        //     const x = Math.min(x2[0], x3[0], x5[0]);
+        //     printAndAdd(x, x2, x3, x5, print);
+        //     k++;
+
+        //     if (x === x2[0]) x2.shift();
+        //     if (x === x3[0]) x3.shift();
+        //     if (x === x5[0]) x5.shift();
+        // }
+
+        // print.shift();
+        // alert(print.join(" "));
         
     </script>
 
