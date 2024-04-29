@@ -12,10 +12,12 @@
     <script>
         "use strict";
         let age, gender;
-        age = +prompt("Введите возраст: ", "");
+        age = prompt("Введите возраст: ");
         gender = prompt("Введите пол (м/ж): ");
 
-        if (age >= 0 && age <= 17) {
+        // if (age === null) alert("Да кто ты такой?");
+        // else{
+        if (age > 0 && age <= 17) {
             alert("Вам работать ещё рано — учитесь");
         }
         else if (age > 17 && age < 60 && (gender == "м" || gender == "m") ||
@@ -33,6 +35,7 @@
         else {
             alert("Да кто ты такой?");
         }
+    // }
     </script>
 
 
