@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+
+      let book1 = {};
+      book1.title = "Превращение";
+      book1.pubYear = 1915;
+      book1.price = 10.95;
+
+      let book2 = {
+        title: "Мост",
+        pubYear: 1915,
+        price: 5.21,
+      };
+
+      book1.show = function () {
+        console.log(`Название книги book1: "${this.title}"\nЦена книги book1: \$${this.price}`);
+      }
+      
+      function showBook(){
+        console.log(`Название книги book2: "${this.title}"\nЦена книги book2: \$${this.price}`);
+      }
+
+      book2.show = showBook;
+
+      book1.show();
+      book2.show();
+
+    </script>
+  </body>
+</html>

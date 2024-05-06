@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    "use strict";
+    let obj = {
+	    className: 'open menu'
+    }
+
+    obj.addClass = function(cls){
+        if(!this.className.includes(cls)) this.className += ' ' + cls;
+        // let name = this.className.split(' ');
+        // if(!name.includes(cls)){
+        //     name.push(cls);
+        // }
+        // this.className = name.join(' ');
+        return this;
+    }
+
+    obj.removeClass = function(cls){
+        let name = this.className.split(' ');
+        name = name.filter(a => a != cls);
+        // if(this.className.includes(cls)) 
+        //     this.className = this.className.replace(new RegExp(cls, 'g'), '');
+        this.className = name.join(' ');
+        return this;
+    }
+
+    obj.addClass('close'); // open menu close
+    obj.addClass('Hi'); // open menu close Hi
+    obj.addClass('open');  // тоже самое
+
+    console.log(obj.className);
+
+    obj.removeClass('Hello'); // тоже самое
+    obj.removeClass('close'); // open menu Hi
+    obj.removeClass('open'); // menu Hi
+
+    console.log(obj.className);
+
+</script>
+
+</body>
+</html>

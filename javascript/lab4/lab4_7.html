@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    "use strict";
+
+    function formatDate(date){
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+
+        if(month < 10) month = '0' + month;
+        if(day < 10) day = '0' + day;
+
+        return `${day}.${month}.${year}`;
+    }
+
+    let d = new Date(2010, 1, 2);
+    console.log(formatDate(d));
+</script>
+
+</body>
+</html>

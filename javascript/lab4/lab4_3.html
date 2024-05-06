@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      let book1 = {};
+      
+      
+      console.log(`Проверка на наличие свойств у объекта book1:
+      ${isEmpty(book1) ? 'Объект book1 не имеет свойств' : 'Объект book1 имеет свойства'}`);
+
+      book1.title = "Превращение";
+      book1.pubYear = 1915;
+      book1.price = 10.95;
+
+      let book2 = {
+        title: "Мост",
+        pubYear: 1915,
+        price: 5.21,
+      };
+      console.log(`Проверка на наличие свойств у объекта book2:
+      ${isEmpty(book2) ? 'Объект book2 не имеет свойств' : 'Объект book2 имеет свойства'}`);
+  
+
+
+      function isEmpty(obj){
+        for (const key in obj) {
+            if (obj.hasOwnProperty(key)) return false;
+        }
+        return true;
+      }
+
+      
+      
+      // print_(book1, "book1");
+      // print_(book2, "book2");
+      // function print_(nameOfObj, str){
+      // console.log(isEmpty(nameOfObj) ? `Объект ${str} не имеет свойств` : `Объект ${str} имеет свойства`);
+      // }
+
+    </script>
+  </body>
+</html>
