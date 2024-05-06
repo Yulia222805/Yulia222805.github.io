@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./lab2.js"></script>
+  </head>
+
+  <body>
+    <script>
+      "use strict";
+      //Задание 1
+      // const pow = (x, n) => { return x**n };
+      // function pow(x, n) {
+      //   return x ** n;
+      // }
+      console.log("Задание 1");
+      let x, n;
+      n = prompt("Введите значение степени");
+      x = prompt("Введите число (основание степени)");
+      if (x == null || n == null || isNaN(x) || isNaN(n)) {
+      // alert("Введите корректные значения!");
+      console.log("Введите корректные значения!")
+      } else alert(`${x}^${n} = ${pow(+x, +n)}`);
+    // } else console.log(`Число ${x} в степени ${n} = ${pow(+x, +n)}`);
+
+ 
+
+      // let sumTo = function (n) {
+      //   return n != 0 ? n + sumTo(n - 1) : 0;
+      // };
+
+      // let number = +prompt(
+      //   "Введите число, сумму для которого нужно подсчитать"
+      // );
+      // alert(`Сумма ${sumTo(number)}`);
+
+      // const isLeapYear = (n) => { return !(n % 400) || !(n % 4) && (n % 100) };
+      // if(isLeapYear(1900)){
+      //   alert("Год високосный");
+      // }
+      // else alert("Год не високосный");
+
+      // let factorial = function (n) {
+      //   return BigInt(n) != 0 ? BigInt(n) * BigInt(factorial(n - 1)) : 1n;
+      // };
+      // alert(`Факториал числа 5 = ${factorial(5)}`);
+
+      // let fib = function (n) {
+      //       return BigInt(n) >= 2 ? BigInt(fib(n-1)) + BigInt(fib(n-2)) : BigInt(n);
+      // }
+
+      // alert(`10-е число Фибоначчи = ${fib(10)}`);
+
+      // function compare(x) {
+      //   return function (y) {
+      //     return y > x ? true : y < x ? false : null;
+      //   };
+      // }
+
+      // function sum(...args) {
+      //   return args.reduce((acc, a) => acc + a, 0);
+      // }
+
+      // alert(sum());
+      // alert(sum(1));
+      // alert(sum(1, 2));
+      // alert(sum(1, 2, 3));
+    </script>
+  </body>
+</html>
