@@ -24,18 +24,18 @@
       let formField = form.getElementsByTagName('input')[0];
       let label = form.getElementsByTagName('label')[0];
 
-      label.style.display = 'none';
+      label.style.visibility = 'hiden';
 
       formField.setAttribute('placeholder', formField.dataset.placeholder);
       label.innerHTML = formField.dataset.placeholder;
 
       formField.addEventListener('focus', () => {
-          label.style.display = 'block';
+          label.style.visibility = 'visible';
           formField.setAttribute('placeholder', 'example@yandex.ru');
       });
 
       formField.addEventListener('blur', () => {
-          label.style.display = 'none';
+          label.style.visibility = 'hiden';
           formField.setAttribute('placeholder', formField.dataset.placeholder);
           
       });
