@@ -24,7 +24,7 @@
       let formField = form.getElementsByTagName('input')[0];
       let label = form.getElementsByTagName('label')[0];
 
-      label.style.visibility = 'hiden';
+      label.style.visibility = 'hidden';
 
       formField.setAttribute('placeholder', formField.dataset.placeholder);
       label.innerHTML = formField.dataset.placeholder;
@@ -35,7 +35,7 @@
       });
 
       formField.addEventListener('blur', () => {
-          label.style.visibility = 'hiden';
+          label.style.visibility = 'hidden';
           formField.setAttribute('placeholder', formField.dataset.placeholder);
           
       });
