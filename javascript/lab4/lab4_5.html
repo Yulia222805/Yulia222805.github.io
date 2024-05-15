@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<script>
-    "use strict";
+
+    <script>
+        "use strict";
+
+        let obj = {
+            name: 'John',
+            age: 30,
+            isAdmin: false,
+        };
+
+        let jsonString = JSON.stringify(obj, null, 2);
+        console.log(jsonString);
+
+        let obj2 = JSON.parse(jsonString);
+
+        // let isEqual = JSON.stringify(obj) === JSON.stringify(obj2);
+        // console.log("Объекты равны:", isEqual);
+        console.log(`Объекты равны? ${JSON.stringify(obj) === JSON.stringify(obj2)}`);
+        // console.log(`Объекты равны? ${obj === obj2}`);
+
+
+
+    </script>
+
+</body>
+
+</html>
+
+<!-- 
 
     let vasya = { name: "Вася", age: 23 };
     let masha = { name: "Маша", age: 18 };
@@ -19,7 +47,5 @@
     for (let k in people) console.log(people[k]);
     // console.log(people);
 
-</script>
 
-</body>
-</html>
+ -->

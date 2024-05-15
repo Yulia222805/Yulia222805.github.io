@@ -1,13 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
-      "use strict";
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+
+    class Book {
+      constructor(title, pubYear, price) {
+        this.title = title;
+        this.pubYear = pubYear;
+        this.price = price;
+      }
+
+      get title() {
+        return this._title;
+      }
+      get pubYear() {
+        return this._pubYear;
+      }
+      get price() {
+        return this._price;
+      }
+
+      set title(title_) {
+        if (typeof (title_) === "string" && title_.trim() !== '') {
+          this._title = title_;
+        }
+        else {
+          console.log("Название книги не может быть пустой строкой");
+        }
+      }
+      set pubYear(pubYear_) {
+        if (typeof pubYear_ === "number" && pubYear_ > 0) {
+          this._pubYear = pubYear_;
+        }
+        else {
+          console.log("Год публикации должен быть положительным числом");
+
+        }
+      }
+      set price(price_) {
+        if (typeof price_ === "number" && price_ > 0) {
+          this._price = price_;
+        }
+        else {
+          console.log("Цена должна быть положительным числом");
+
+        }
+      }
+
+    }
+
+    Book.prototype.show = function () {
+      console.log(`Название книги: "${this.title}"\nЦена книги: \$${this.price}\nГод публикации: ${this.pubYear}`);
+    };
+
+    let book = new Book("Превращение", 1915, 10.95);
+    book.show();
+
+    book.title = "";
+    book.price = 50;
+    book.pubYear = -11;
+    book.show();
+
+  </script>
+</body>
+
+</html>
+
+<!-- 
 
       let book1 = {};
       book1.title = "Превращение";
@@ -33,6 +100,4 @@
       book1.show();
       book2.show();
 
-    </script>
-  </body>
-</html>
+ -->

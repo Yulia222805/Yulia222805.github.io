@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  </head>
-  <body>
-    <script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    "use strict";
+
+    class Book {
+      constructor(title, pubYear, price) {
+        this.title = title;
+        this.pubYear = pubYear;
+        this.price = price;
+      }
+    }
+
+    Book.prototype.show = function () {
+      console.log(`Название книги: "${this.title}"\nЦена книги: \$${this.price}`);
+    };
+
+    let book1 = new Book("Превращение", 1915, 10.95);
+    book1.show();
+
+  </script>
+
+</body>
+
+</html>
+
+<!-- 
+
+    // function Book(title, pubYear, price) {
+    //       this.title = title;
+    //       this.pubYear = pubYear;
+    //       this.price = price;
+    //   }
+
+<script>
       "use strict";
+
 
       let book1 = {};
       book1.title = "Превращение";
@@ -25,5 +61,5 @@
         console.log(`book2.${key}: ${book2[key]}`);
       }
     </script>
-  </body>
-</html>
+
+ -->
