@@ -14,24 +14,25 @@
 	<script>
 	// ваш код
     let headElement = document.head;
+    console.log(`Элемент head: ${headElement.innerHTML}`);
+    // console.log(headElement);
     
-        let ulElement = document.querySelector('ul');
+    let ulElement = document.querySelector('ul');
+    console.log(`Элемент ul: ${ulElement.innerHTML}`);
+    // console.log(ulElement);
 
-        // let liElements = ulElement.getElementsByTagName('li');
-        let liElements = document.querySelectorAll('li');
-
-        console.log(`Элемент head: ${headElement.innerHTML}`);
-        console.log(`Элемент ul: ${ulElement.innerHTML}`);
-
+    let liElements = document.querySelectorAll('li');
         for (const elem of liElements) {
             console.log(`Элементы li: ${elem.innerHTML}`);
-        }
+            // console.log(elem);
 
-        // console.log(`Элемент head: ${headElement.innerHTML}`);
-        // console.log(`Элемент ul: ${ulElement.innerHTML}`);
-        // console.log('Элементы li:', liElements);
-        // console.log('Элементы li:');
+        }
 
 	</script>
 </body>
 </html>
+
+<!--         console.log(`Элемент head: ${headElement.innerHTML}`);
+        console.log(`Элемент ul: ${ulElement.innerHTML}`);
+        console.log('Элементы li:', liElements);
+        console.log('Элементы li:'); -->

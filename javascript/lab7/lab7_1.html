@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="janrOfMusic" onchange="printCurrentOpt()">
+        <option value="Rock">Рок</option>
+        <option value="Blues" selected>Блюз</option>
+    </select>
+
+    <script>
+
+        let option;
+
+        let newOption = new Option('Классика', 'Classic');
+        janrOfMusic.append(newOption);
+        newOption.selected = true;
+        printCurrentOpt();
+
+        function printCurrentOpt(){
+            option = janrOfMusic.options[janrOfMusic.selectedIndex];
+            console.log(`Текст новой выбранной опции: ${option.textContent}\nЗначение: ${option.value}`);
+        }
+        
+    </script>
+    
+</body>
+</html>

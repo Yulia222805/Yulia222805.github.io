@@ -16,19 +16,14 @@
 
     obj.addClass = function(cls){
         if(!this.className.includes(cls)) this.className += ' ' + cls;
-        // let name = this.className.split(' ');
-        // if(!name.includes(cls)){
-        //     name.push(cls);
-        // }
-        // this.className = name.join(' ');
+
         return this;
     }
 
     obj.removeClass = function(cls){
         let name = this.className.split(' ');
         name = name.filter(a => a != cls);
-        // if(this.className.includes(cls)) 
-        //     this.className = this.className.replace(new RegExp(cls, 'g'), '');
+        
         this.className = name.join(' ');
         return this;
     }
@@ -49,3 +44,12 @@
 
 </body>
 </html>
+
+<!-- // let name = this.className.split(' ');
+        // if(!name.includes(cls)){
+        //     name.push(cls);
+        // }
+        // this.className = name.join(' ');
+        
+        // if(this.className.includes(cls)) 
+        //     this.className = this.className.replace(new RegExp(cls, 'g'), ''); -->

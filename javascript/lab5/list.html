@@ -46,9 +46,10 @@
   <script>
 	/* ваш код */
     let liElements = document.querySelectorAll('li');
+    let text, count;
         for (const elem of liElements) {
-            let text = elem.firstChild.textContent.trim();
-            let count = elem.querySelectorAll('li').length;
+            text = elem.firstChild.textContent.trim();
+            count = elem.querySelectorAll('li').length;
             console.log(`Текст: ${text}\nКоличество вложенных элементов li: ${count}`);
         }
   </script>
